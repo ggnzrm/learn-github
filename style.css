@@ -1,0 +1,164 @@
+/* สไตล์พื้นฐานของหน้าเว็บ */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #003cff, #003192)!important; /* ไล่ระดับสีพื้นหลัง */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* สไตล์ของคอนเทนเนอร์ */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ff0000!important;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* สไตล์ของส่วนหัว */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333!important;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666!important;
+}
+
+/* สไตล์ของฟอร์ม */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    color: #444!important;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd!important;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff!important;
+    outline: none;
+}
+
+/* สไตล์ของปุ่ม */
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #007bff!important;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3!important;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* สไตล์ของตารางค่าความจริง */
+#truthTable {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd!important;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff!important;
+    color: #fff!important;
+    font-weight: 500;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9!important;
+}
+
+tr:hover {
+    background-color: #f1f1f1!important;
+}
+
+/* สไตล์ของส่วนท้าย */
+footer {
+    margin-top: 30px;
+    font-size: 0.875rem;
+    color: #777!important;
+}
+
+/* สไตล์การทำให้คอนเทนเนอร์ค่อยๆ ปรากฏ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* การออกแบบที่ตอบสนอง (Responsive Design) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: calc(100% - 18px);
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Table Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>หาค่าความจริงของตรรกศาสตร์</h1>
+            <p>ใส่นิพจน์เพื่อหาคำตอบ(เช่น p,q เป็นต้น).</p>
+        </header>
+        <main>
+            <form id="truthTableForm">
+                <label for="expression">:</label>
+                <input type="text" id="expression" name="expression" placeholder=" p ∧ q" required>
+                <button type="submit">หาผลลัพธ์</button>
+            </form>
+            <div id="truthTable"></div>
+        </main>
+        <footer>
+            <p>&copy; .</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
